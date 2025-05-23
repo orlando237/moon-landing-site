@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Moon Landing</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Shooting stars effect -->
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  
+  <main class="container">
+    <header>
+      <h1>THE MOON LANDING</h1>
+      <p class="date">JULY 20, 1969</p>
+      <div class="lunar-phase" title="Lunar phase during Apollo 11 mission"></div>
+    </header>
+
+    <!-- Navigation tabs -->
+    <div class="tabs-container">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="mission">MISSION</button>
+        <button class="tab-button" data-tab="astronauts">ASTRONAUTS</button>
+        <button class="tab-button" data-tab="gallery">GALLERY</button>
+      </div>
+      
+      <div class="tab-indicator"></div>
+    </div>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+      <!-- Tab 1: Mission (Default active) -->
+      <div class="tab-pane active" id="mission">
+        <section class="image-block">
+          <img src="moon1.png" alt="Astronaut with American flag on the Moon">
+          <p class="image-caption">Neil Armstrong on the lunar surface with the American flag</p>
+          <div class="audio-container">
+            <p>LISTEN TO THE HISTORIC BROADCAST</p>
+            <audio controls>
+              <source src="moon_audio.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </section>        <article>
+          <h2>A Historic Achievement</h2>
+          <p>The first manned Moon landing took place during NASA's Apollo 11 mission, marking one of the most significant events in the history of human space exploration. On July 20, 1969, astronauts Neil Armstrong, Buzz Aldrin, and Michael Collins carried out a mission that captivated millions across the globe. While Collins remained in orbit aboard the Command Module Columbia, Armstrong and Aldrin descended to the lunar surface in the Lunar Module Eagle.</p>
+          
+          <p>At 20:17 UTC, Armstrong reported the historic message: <span class="quote">"Houston, Tranquility Base here. The Eagle has landed."</span> Six hours later, Armstrong descended the ladder and stepped onto the Moon's surface, delivering the now-legendary words: <span class="quote">"That's one small step for man, one giant leap for mankind."</span> Millions of people around the world watched the event on black-and-white televisions, with the live broadcast carried via satellite to over 600 million viewers.</p>
+          
+          <p>This mission occurred during the Cold War, a period of political tension between the United States and the Soviet Union. The Moon landing was not only a scientific and technological triumph but also a demonstration of American innovation and determination in the context of the Space Race, which had begun years earlier when the Soviet Union launched Sputnik 1, the first artificial satellite, in 1957.</p>
+          
+          <p>The success of Apollo 11 was the result of years of preparation and the work of over 400,000 scientists, engineers, and technicians. The Saturn V rocket stood over 110 meters tall and remains the most powerful rocket ever built. The astronauts wore specially designed suits to protect them from extreme temperatures and lack of atmosphere. The onboard computers had less processing power than today's smartphones, yet they executed one of the most complex navigation operations in history.</p>
+
+          <p>The Moon landing had a lasting effect on science, technology, and culture: it inspired generations to pursue careers in science and engineering, provided new scientific data, and symbolized the possibilities of human exploration beyond Earth. The footprints left by Armstrong and Aldrin will remain on the lunar surface for millions of years, as there is no wind or rain to erode them—a lasting monument to humanity's greatest journey.</p>
+
+          <div class="fact-box">
+            <h2>Did You Know?</h2>
+            <ul>
+              <li>The lunar surface is covered in regolith, a fine dust that clung to the astronauts' suits.</li>
+              <li>Armstrong and Aldrin spent about 21 hours on the Moon and collected over 21 kg of lunar material.</li>
+              <li>A plaque was left on the Moon reading: <span class="quote">"We came in peace for all mankind."</span></li>
+              <li>The mission traveled a distance of 240,000 miles from Earth to the Moon in just over three days.</li>
+              <li>The American flag they planted was knocked over by the rocket blast when the lunar module departed.</li>
+            </ul>
+          </div>
+        </article>
+
+        <section class="image-block">
+          <img src="moon3.png" alt="Lunar Module and astronaut on the Moon">
+          <p class="image-caption">The Eagle lunar module on the Moon's surface</p>
+        </section>
+      </div>
+
+      <!-- Tab 2: Astronauts -->
+      <div class="tab-pane" id="astronauts">
+        <div class="astronauts-container">
+          <h2 class="astronaut-header">THE CREW OF APOLLO 11</h2>
+          
+          <div class="astronaut-card">
+            <div class="astronaut-image">
+              <div class="hexagon">
+                <img src="neil_am.png" alt="Neil Armstrong">
+              </div>
+            </div>
+            <div class="astronaut-info">
+              <h3>NEIL ARMSTRONG</h3>
+              <p class="astronaut-title">MISSION COMMANDER</p>
+              <p>Neil Alden Armstrong (August 5, 1930 – August 25, 2012) was an American astronaut, naval aviator, test pilot, and aeronautical engineer who became the first person to walk on the Moon.</p>
+              <p>As spacecraft commander for Apollo 11, Armstrong gained the distinction of being the first person to land a craft on the Moon and the first to step on its surface.</p>
+              <p>Before becoming an astronaut, Armstrong was an officer in the U.S. Navy and served in the Korean War. After the war, he earned his bachelor's degree from Purdue University and served as a test pilot at the National Advisory Committee for Aeronautics (NACA).</p>
+              <div class="astronaut-stats">
+                <div class="stat">
+                  <span class="stat-number">38</span>
+                  <span class="stat-label">AGE DURING MISSION</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">2</span>
+                  <span class="stat-label">SPACE FLIGHTS</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">8</span>
+                  <span class="stat-label">DAYS IN SPACE</span>
+                </div>
+              </div>
+              <p class="astronaut-quote"><span class="quote">"Mystery creates wonder and wonder is the basis of man's desire to understand."</span></p>
+            </div>
+          </div>
+          
+          <div class="astronaut-card">
+            <div class="astronaut-image">
+              <div class="hexagon">
+                <img src="buzz_aldrin.png" alt="Buzz Aldrin">
+              </div>
+            </div>
+            <div class="astronaut-info">
+              <h3>BUZZ ALDRIN</h3>
+              <p class="astronaut-title">LUNAR MODULE PILOT</p>
+              <p>Edwin Eugene "Buzz" Aldrin Jr. (born January 20, 1930) is an American former astronaut, engineer and fighter pilot. As the Lunar Module Pilot on Apollo 11, he was one of the first two humans to land on the Moon.</p>
+              <p>Aldrin set foot on the Moon at 03:15:16 on July 21, 1969 (UTC), nineteen minutes after Armstrong first touched the surface. He is a graduate of the United States Military Academy at West Point, New York.</p>
+              <p>He flew 66 combat missions in Korea and later earned a Sc.D. degree in astronautics from the Massachusetts Institute of Technology.</p>
+              <div class="astronaut-stats">
+                <div class="stat">
+                  <span class="stat-number">39</span>
+                  <span class="stat-label">AGE DURING MISSION</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">2</span>
+                  <span class="stat-label">SPACE FLIGHTS</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">12</span>
+                  <span class="stat-label">DAYS IN SPACE</span>
+                </div>
+              </div>
+              <p class="astronaut-quote"><span class="quote">"From the distance of the Moon, Earth was four times the size of a full moon seen from Earth. It was a brilliant jewel in the black velvet sky."</span></p>
+            </div>
+          </div>
+          
+          <div class="astronaut-card">
+            <div class="astronaut-image">
+              <div class="hexagon">
+                <img src="michael_collins.jpg" alt="Michael Collins">
+              </div>
+            </div>
+            <div class="astronaut-info">
+              <h3>MICHAEL COLLINS</h3>
+              <p class="astronaut-title">COMMAND MODULE PILOT</p>
+              <p>Michael Collins (October 31, 1930 – April 28, 2021) was an American astronaut who flew the Apollo 11 command module Columbia around the Moon while his crewmates made the first crewed landing on the surface.</p>
+              <p>Collins remained alone in orbit for 21 hours, becoming "the loneliest human in existence" as his companions walked on the lunar surface. He was responsible for re-docking the two spacecraft before the return journey to Earth.</p>
+              <p>Before joining NASA, he was a fighter pilot and experimental test pilot in the U.S. Air Force. He logged more than 4,200 hours of flying time during his career.</p>
+              <div class="astronaut-stats">
+                <div class="stat">
+                  <span class="stat-number">38</span>
+                  <span class="stat-label">AGE DURING MISSION</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">2</span>
+                  <span class="stat-label">SPACE FLIGHTS</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-number">11</span>
+                  <span class="stat-label">DAYS IN SPACE</span>
+                </div>
+              </div>
+              <p class="astronaut-quote"><span class="quote">"I am alone now, truly alone, and absolutely isolated from any known life. I am it. If a count were taken, the score would be three billion plus two over on the other side of the moon, and one plus God knows what on this side."</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Tab 3: Gallery -->
+      <div class="tab-pane" id="gallery">
+        <h2 class="gallery-header">MISSION GALLERY</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="image1.jpg" alt="Apollo 11 Mission" class="gallery-image">
+            <div class="gallery-caption">Neil Armstrong on lunar surface</div>
+          </div>
+          <div class="gallery-item">
+            <img src="aldrin.png" alt="Apollo 11 Mission" class="gallery-image">
+            <div class="gallery-caption">Buzz Aldrin beside scientific equipment</div>
+          </div>
+          <div class="gallery-item">
+            <img src="image3.png" alt="Apollo 11 Mission" class="gallery-image">
+            <div class="gallery-caption">The Eagle lunar module</div>
+          </div>
+          <div class="gallery-item">
+            <img src="image4.jpg" alt="Apollo 11 Mission" class="gallery-image">
+            <div class="gallery-caption">Footprint on lunar surface</div>
+          </div>
+          <div class="gallery-item">
+            <img src="image5.jpg" alt="Apollo 11 Mission" class="gallery-image">
+            <div class="gallery-caption">Earth rising over lunar horizon</div>
+          </div>
+          <div class="gallery-item">
+            <img src="image6.jpg" alt="Apollo 11 Mission" class="gallery-image">
+            <div class="gallery-caption">Saturn V rocket launch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 | THE MOON LANDING | Created by Orlando David Osorio</p>
+    </footer>
+  </main>
+
+  <script>
+    // Add tab functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabButtons = document.querySelectorAll('.tab-button');
+      const tabPanes = document.querySelectorAll('.tab-pane');
+      const tabIndicator = document.querySelector('.tab-indicator');
+      
+      // Function to position the indicator
+      function positionIndicator(activeTab) {
+        const tabWidth = activeTab.offsetWidth;
+        const tabLeft = activeTab.offsetLeft;
+        tabIndicator.style.width = tabWidth + 'px';
+        tabIndicator.style.left = tabLeft + 'px';
+      }
+      
+      // Initialize indicator position
+      positionIndicator(document.querySelector('.tab-button.active'));
+      
+      // Set up tab switching
+      tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons and panes
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          tabPanes.forEach(pane => pane.classList.remove('active'));
+          
+          // Add active class to current button and corresponding pane
+          this.classList.add('active');
+          const tabId = this.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+          
+          // Update indicator position
+          positionIndicator(this);
+        });
+      });
+      
+      // Make quotes glow when clicked
+      const quotes = document.querySelectorAll('.quote');
+      quotes.forEach(quote => {
+        quote.addEventListener('click', function() {
+          this.style.textShadow = '0 0 10px rgba(0, 255, 217, 1), 0 0 20px rgba(0, 255, 217, 0.8)';
+          setTimeout(() => {
+            this.style.textShadow = '';
+          }, 1000);
+        });
+      });
+      
+      // Make lunar phase rotate on hover
+      const lunarPhase = document.querySelector('.lunar-phase');
+      lunarPhase.addEventListener('mouseover', function() {
+        this.style.animationDuration = '5s';
+      });
+      lunarPhase.addEventListener('mouseout', function() {
+        this.style.animationDuration = '60s';
+      });
+      
+      // Image gallery zoom effect
+      const galleryImages = document.querySelectorAll('.gallery-image');
+      galleryImages.forEach(image => {
+        image.addEventListener('click', function() {
+          this.classList.toggle('zoomed');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
